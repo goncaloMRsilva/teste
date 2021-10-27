@@ -27,11 +27,11 @@ namespace teste.Controllers
         {
             return View();
         }
-
-        public string Version() {
-            string versao = "1.0";
-            return versao;
-        }
+        
+        public String Version()
+        {
+            return "1.0.0";
+        } 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
